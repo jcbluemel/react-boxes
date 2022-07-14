@@ -11,3 +11,14 @@ import React from "react";
  *
  *  BoxList -> Box
  **/
+function Box({backgroundColor="red", height="100", width="100"}) {
+    const boxStyle = {
+        backgroundColor,
+        height: `${height}px`,
+        width: `${width}px`
+    };
+    return <div style={boxStyle}></div>;
+}
+
+export default Box;
+
